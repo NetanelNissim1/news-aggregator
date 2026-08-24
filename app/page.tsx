@@ -75,7 +75,7 @@ export default function Home() {
 
   useEffect(() => {
     fetchTickerNews();
-  }, []);
+  }, [disabledSources]);
 
   useEffect(() => {
     if (!refreshInterval || refreshInterval <= 0) return;
@@ -87,7 +87,7 @@ export default function Home() {
     }, intervalMs);
 
     return () => clearInterval(intervalId);
-  }, [refreshInterval]);
+  }, [refreshInterval, disabledSources]);
 
   const fetchNews = async (category = 'all', silent = false) => {
     if (!silent) setLoading(true);
@@ -217,7 +217,7 @@ export default function Home() {
 
   useEffect(() => {
     fetchNews(activeTab);
-  }, [activeTab]);
+  }, [activeTab, disabledSources, disabledTabs]);
 
   const stripHtml = (html: string) => {
     if (!html) return "";
