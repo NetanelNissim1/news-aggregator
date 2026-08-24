@@ -119,3 +119,12 @@
 [2026-08-24T15:29:04.148Z] [CLICK] [URL: /settings] - User clicked on a element: "No label" (href: /)
 [2026-08-24T15:29:58.249Z] [CLICK] [URL: /] - User clicked on button element: "No label"
 [2026-08-24T15:29:59.746Z] [CLICK] [URL: /] - User clicked on a element: "הגדרות" (href: /settings)
+[2026-08-24T15:35:23.938Z] [CLICK] [URL: /] - User clicked on button element: "No label"
+[2026-08-24T15:35:25.325Z] [CLICK] [URL: /] - User clicked on a element: "הגדרות" (href: /settings)
+[2026-08-24T15:36:08.096Z] [CLICK] [URL: /settings] - User clicked on button element: "שמור הגדרות"
+[2026-08-24T15:36:11.706Z] [CLICK] [URL: /settings] - User clicked on a element: "No label" (href: /)
+[2026-08-24T15:36:27.754Z] [CLICK] [URL: /] - User clicked on button element: "No label"
+[2026-08-24T15:36:29.515Z] [CLICK] [URL: /] - User clicked on a element: "מקורות" (href: /sources)
+[2026-08-24T15:36:35.964Z] [CLICK] [URL: /sources] - User clicked on a element: "No label" (href: /)
+[2026-08-24T15:36:54.905Z] [CLICK] [URL: /] - User clicked on button element: "No label"
+[2026-08-24T15:36:56.133Z] [CLICK] [URL: /] - User clicked on a element: "הגדרות" (href: /settings)

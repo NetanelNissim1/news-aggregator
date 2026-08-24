@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useState, useEffect } from "react";
 import { useSettings } from "../../components/SettingsProvider";
 
@@ -38,6 +39,8 @@ export default function Settings() {
   const [localRefreshInterval, setLocalRefreshInterval] = useState<number>(0);
   const [isSaved, setIsSaved] = useState(false);
 
+  const router = useRouter();
+
   useEffect(() => {
     setLocalDisabledSources(disabledSources);
     setLocalDisabledTabs(disabledTabs);
@@ -71,6 +74,7 @@ export default function Settings() {
     setGeminiApiKey(localGeminiApiKey);
     setRefreshInterval(localRefreshInterval);
     setIsSaved(true);
+    router.refresh(); // Invalidate Next.js router cache so homepage refetches
     setTimeout(() => setIsSaved(false), 3000);
   };
 

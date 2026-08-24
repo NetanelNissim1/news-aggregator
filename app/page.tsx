@@ -61,7 +61,7 @@ export default function Home() {
   const fetchTickerNews = async () => {
     try {
       const disabledQuery = disabledSources.length > 0 ? `&disabled=${encodeURIComponent(disabledSources.join(','))}` : '';
-      const response = await fetch(`/api/news?category=world${disabledQuery}`);
+      const response = await fetch(`/api/news?category=world${disabledQuery}`, { cache: 'no-store' });
       if (response.ok) {
         const data = await response.json();
         const NEWS_SITES = ['Ynet', 'Channel 14', 'i24News', 'CNN', 'BBC News', 'TheMarker', 'Calcalist', 'Mako', 'Walla', 'Ynet Tech', 'NYTimes'];
@@ -98,7 +98,7 @@ export default function Home() {
          const activeIds = ALL_TABS.filter(t => t.id !== 'all' && !disabledTabs?.includes(t.id)).map(t => t.id);
          catQuery = activeIds.join(',');
       }
-      const response = await fetch(`/api/news?category=${catQuery}${disabledQuery}`);
+      const response = await fetch(`/api/news?category=${catQuery}${disabledQuery}`, { cache: 'no-store' });
       if (response.ok) {
         const data = await response.json();
         setNews(data.articles || []);
