@@ -60,7 +60,7 @@ export default function Home() {
 
   const fetchTickerNews = async () => {
     try {
-      const disabledQuery = disabledSources.length > 0 ? `&disabled=${disabledSources.join(',')}` : '';
+      const disabledQuery = disabledSources.length > 0 ? `&disabled=${encodeURIComponent(disabledSources.join(','))}` : '';
       const response = await fetch(`/api/news?category=world${disabledQuery}`);
       if (response.ok) {
         const data = await response.json();
@@ -92,7 +92,7 @@ export default function Home() {
   const fetchNews = async (category = 'all', silent = false) => {
     if (!silent) setLoading(true);
     try {
-      const disabledQuery = disabledSources.length > 0 ? `&disabled=${disabledSources.join(',')}` : '';
+      const disabledQuery = disabledSources.length > 0 ? `&disabled=${encodeURIComponent(disabledSources.join(','))}` : '';
       let catQuery = category;
       if (category === 'all') {
          const activeIds = ALL_TABS.filter(t => t.id !== 'all' && !disabledTabs?.includes(t.id)).map(t => t.id);

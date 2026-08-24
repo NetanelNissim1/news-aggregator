@@ -194,7 +194,14 @@ export async function GET(request) {
       return dateB - dateA;
     });
 
-    return NextResponse.json({ articles: allArticles });
+    return NextResponse.json(
+      { articles: allArticles },
+      {
+        headers: {
+          'Cache-Control': 'no-store, must-revalidate',
+        },
+      }
+    );
   } catch (error) {
     console.error('Error fetching RSS feeds:', error);
     return NextResponse.json(
