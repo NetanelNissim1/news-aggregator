@@ -115,3 +115,7 @@
 [2026-08-24T15:24:15.181Z] [CLICK] [URL: /] - User clicked on button element: "ראשי"
 [2026-08-24T15:26:05.524Z] [CLICK] [URL: /] - User clicked on button element: "No label"
 [2026-08-24T15:26:06.654Z] [CLICK] [URL: /] - User clicked on a element: "הגדרות" (href: /settings)
+[2026-08-24T15:29:01.877Z] [CLICK] [URL: /settings] - User clicked on button element: "שמור הגדרות"
+[2026-08-24T15:29:04.148Z] [CLICK] [URL: /settings] - User clicked on a element: "No label" (href: /)
+[2026-08-24T15:29:58.249Z] [CLICK] [URL: /] - User clicked on button element: "No label"
+[2026-08-24T15:29:59.746Z] [CLICK] [URL: /] - User clicked on a element: "הגדרות" (href: /settings)

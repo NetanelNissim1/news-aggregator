@@ -46,9 +46,15 @@ export default function Settings() {
   }, [disabledSources, disabledTabs, geminiApiKey, refreshInterval]);
 
   const handleToggleSource = (source: string) => {
-    setLocalDisabledSources(prev => 
-      prev.includes(source) ? prev.filter(s => s !== source) : [...prev, source]
-    );
+    setLocalDisabledSources(prev => {
+      const isCurrentlyDisabled = prev.includes(source);
+      // If we are disabling a source (meaning it was active) and we only have 3 active left, block it.
+      if (!isCurrentlyDisabled && (ALL_SOURCES.length - prev.length) <= 3) {
+        alert("חובה להשאיר לפחות 3 מקורות מידע פעילים.");
+        return prev;
+      }
+      return isCurrentlyDisabled ? prev.filter(s => s !== source) : [...prev, source];
+    });
     setIsSaved(false);
   };
 

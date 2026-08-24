@@ -187,10 +187,23 @@ export async function GET(request) {
       }
     }
 
-    // Sort the articles by newest publication date instead of shuffling
+    // Filter articles to be within the last month and not too far in the future
+    const oneMonthAgo = new Date();
+    oneMonthAgo.setMonth(oneMonthAgo.getMonth() - 1);
+    const futureLimit = new Date();
+    futureLimit.setDate(futureLimit.getDate() + 1);
+
+    allArticles = allArticles.filter(a => {
+      if (!a.pubDate) return false;
+      const pub = new Date(a.pubDate);
+      // Ensure date is valid and within range
+      return !isNaN(pub.getTime()) && pub >= oneMonthAgo && pub <= futureLimit;
+    });
+
+    // Sort the articles by newest publication date
     allArticles.sort((a, b) => {
-      const dateA = a.pubDate ? new Date(a.pubDate).getTime() : 0;
-      const dateB = b.pubDate ? new Date(b.pubDate).getTime() : 0;
+      const dateA = new Date(a.pubDate).getTime();
+      const dateB = new Date(b.pubDate).getTime();
       return dateB - dateA;
     });
 
