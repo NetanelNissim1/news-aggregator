@@ -6,8 +6,8 @@ import Link from "next/link";
 import { useSettings } from "../components/SettingsProvider";
 
 export default function Home() {
-  const [news, setNews] = useState([]);
-  const [tickerNews, setTickerNews] = useState([]);
+  const [news, setNews] = useState<any[]>([]);
+  const [tickerNews, setTickerNews] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
   const [activeTab, setActiveTab] = useState('all');
   const [searchQuery, setSearchQuery] = useState('');
@@ -23,6 +23,16 @@ export default function Home() {
   
   const activeTabRef = useRef(activeTab);
   const { articlesPerTab, disabledSources, disabledTabs, geminiApiKey, refreshInterval } = useSettings();
+
+  let allNews = [...news];
+  // Apply search filter if active
+  if (searchQuery.trim() !== '') {
+    const lowerQuery = searchQuery.toLowerCase();
+    allNews = allNews.filter((item: any) => 
+      (item.title && item.title.toLowerCase().includes(lowerQuery)) ||
+      (item.contentSnippet && item.contentSnippet.toLowerCase().includes(lowerQuery))
+    );
+  }
   
   const ALL_TABS = [
     { id: 'all', name: 'ראשי' },
@@ -54,7 +64,7 @@ export default function Home() {
       if (response.ok) {
         const data = await response.json();
         const NEWS_SITES = ['Ynet', 'CNN', 'BBC News', 'TheMarker', 'Calcalist', 'Mako', 'Walla', 'Ynet Tech'];
-        const filtered = (data.articles || []).filter(item => NEWS_SITES.includes(item.source)).slice(0, 10);
+        const filtered = (data.articles || []).filter((item: any) => NEWS_SITES.includes(item.source)).slice(0, 10);
         setTickerNews(filtered);
       }
     } catch (e) {
@@ -99,7 +109,7 @@ export default function Home() {
     }
   };
 
-  const handleAiAction = async (actionId, displayActionText) => {
+  const handleAiAction = async (actionId: string, displayActionText: string) => {
     setAiResponses(prev => [...prev, { role: 'user', text: displayActionText }]);
     setAiInput('');
     setIsAiLoading(true);
@@ -160,7 +170,7 @@ export default function Home() {
         return;
       } catch (err) {
         console.error(err);
-        setAiResponses(prev => [...prev, { role: 'assistant', text: `❌ שגיאה בהתחברות ל-Gemini.\n\nפרטי שגיאה:\n${err.message}\n\nאנא ודא שמפתח ה-API שלך בהגדרות תקין.` }]);
+        setAiResponses(prev => [...prev, { role: 'assistant', text: `אופס, שגיאה בהתחברות ל-Gemini.\n\nפרטי שגיאה:\n${(err as any).message}\n\nאנא ודא שמפתח ה-API שלך בהגדרות תקין.` }]);
         setIsAiLoading(false);
         return;
       }
@@ -208,22 +218,13 @@ export default function Home() {
     fetchNews(activeTab);
   }, [activeTab]);
 
-  const stripHtml = (html) => {
+  const stripHtml = (html: string) => {
     if (!html) return "";
     const doc = new DOMParser().parseFromString(html, "text/html");
     return doc.body.textContent || "";
   };
 
-  let allNews = [...news];
-  
-  // Apply search filter if active
-  if (searchQuery.trim() !== '') {
-    const lowerQuery = searchQuery.toLowerCase();
-    allNews = allNews.filter(item => 
-      (item.title && item.title.toLowerCase().includes(lowerQuery)) ||
-      (item.contentSnippet && item.contentSnippet.toLowerCase().includes(lowerQuery))
-    );
-  }
+
 
   const featured = allNews.length > 0 ? allNews[0] : null;
   // Use the global setting for the total number of articles (subtract 1 for the featured article)
@@ -588,8 +589,12 @@ export default function Home() {
   );
 }
 
-function NewsCard({ item, stripHtml, isFeatured = false, isExpanded, onToggle }) {
-  const handleClick = (e) => {
+function NewsCard({ item, stripHtml, isFeatured = false, isExpanded, onToggle }: any) {
+  const handleLinkClick = (e: any) => {
+    e.stopPropagation();
+  };
+
+  const handleClick = (e: any) => {
     e.preventDefault();
     if (onToggle) onToggle();
   };
@@ -656,7 +661,7 @@ function NewsCard({ item, stripHtml, isFeatured = false, isExpanded, onToggle })
                   )}
                   {item.categories && item.categories.length > 0 && (
                     <div className="flex items-center gap-2">
-                      {item.categories.slice(0, 3).map((cat, idx) => (
+                      {(item.categories || []).map((cat: any, idx: number) => (
                         <span key={idx} className="text-xs text-slate-300 bg-slate-800/40 px-2.5 py-1 rounded-md border border-white/5">
                           {typeof cat === 'string' ? cat : (cat._ || cat.$?.domain || 'Tag')}
                         </span>
