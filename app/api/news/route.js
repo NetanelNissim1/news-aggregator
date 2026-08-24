@@ -18,6 +18,11 @@ export async function GET(request) {
     const feeds = {
       world: [
         { name: 'Ynet', url: 'https://www.ynet.co.il/Integration/StoryRss2.xml', lang: 'he' },
+        { name: 'Channel 14', url: 'https://www.now14.co.il/feed/', lang: 'he' },
+        { name: 'i24News', url: 'https://www.i24news.tv/he/rss', lang: 'he' },
+        { name: 'MSN', url: 'https://www.msn.com/he-il/news/rss', lang: 'he' },
+        { name: 'NYTimes', url: 'https://rss.nytimes.com/services/xml/rss/nyt/World.xml', lang: 'en' },
+        { name: 'Google News', url: 'https://news.google.com/rss?hl=en-IL&gl=IL&ceid=IL:en', lang: 'en' },
         { name: 'CNN', url: 'http://rss.cnn.com/rss/edition_world.rss', lang: 'en' },
         { name: 'BBC News', url: 'http://feeds.bbci.co.uk/news/world/rss.xml', lang: 'en' },
         { name: 'TheMarker', url: 'https://www.themarker.com/cmlink/1.144', lang: 'he' },
@@ -85,6 +90,8 @@ export async function GET(request) {
       economy: [
         { name: 'Calcalist', url: 'https://www.calcalist.co.il/GeneralRSS/0,16335,L-8,00.xml', lang: 'he' },
         { name: 'TheMarker', url: 'https://www.themarker.com/cmlink/1.144', lang: 'he' },
+        { name: 'Business Insider', url: 'https://feeds.businessinsider.com/custom/all', lang: 'en' },
+        { name: 'Forbes', url: 'https://www.forbes.com/business/feed/', lang: 'en' },
         { name: 'Reddit', url: 'https://www.reddit.com/r/economy/.rss', lang: 'en' }
       ],
       ev: [

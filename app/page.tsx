@@ -63,7 +63,7 @@ export default function Home() {
       const response = await fetch(`/api/news?category=world`);
       if (response.ok) {
         const data = await response.json();
-        const NEWS_SITES = ['Ynet', 'CNN', 'BBC News', 'TheMarker', 'Calcalist', 'Mako', 'Walla', 'Ynet Tech'];
+        const NEWS_SITES = ['Ynet', 'Channel 14', 'i24News', 'CNN', 'BBC News', 'TheMarker', 'Calcalist', 'Mako', 'Walla', 'Ynet Tech', 'NYTimes'];
         const filtered = (data.articles || []).filter((item: any) => NEWS_SITES.includes(item.source)).slice(0, 10);
         setTickerNews(filtered);
       }

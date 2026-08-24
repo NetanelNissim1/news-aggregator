@@ -67,3 +67,30 @@
 [2026-08-18T12:29:08.153Z] [CLICK] [URL: /] - User clicked on button element: "No label"
 [2026-08-18T12:29:09.868Z] [CLICK] [URL: /] - User clicked on a element: "מקורות" (href: /sources)
 [2026-08-18T12:31:11.801Z] [CLICK] [URL: /sources] - User clicked on a element: "No label" (href: /)
+[2026-08-24T14:37:03.282Z] [CLICK] [URL: /] - User clicked on button element: "No label"
+[2026-08-24T14:37:04.043Z] [CLICK] [URL: /] - User clicked on a element: "מקורות" (href: /sources)
+[2026-08-24T14:38:13.643Z] [CLICK] [URL: /sources] - User clicked on a element: "No label" (href: /)
+[2026-08-24T14:40:07.033Z] [CLICK] [URL: /] - User clicked on button element: "No label"
+[2026-08-24T14:40:08.218Z] [CLICK] [URL: /] - User clicked on a element: "מקורות" (href: /sources)
+[2026-08-24T14:48:39.705Z] [CLICK] [URL: /sources] - User clicked on a element: "No label" (href: /)
+[2026-08-24T14:48:44.390Z] [CLICK] [URL: /] - User clicked on button element: "No label"
+[2026-08-24T14:48:45.589Z] [CLICK] [URL: /] - User clicked on a element: "הגדרות" (href: /settings)
+[2026-08-24T15:01:47.738Z] [CLICK] [URL: /settings] - User clicked on button element: "שמור הגדרות"
+[2026-08-24T15:01:49.910Z] [CLICK] [URL: /settings] - User clicked on a element: "No label" (href: /)
+[2026-08-24T15:02:14.021Z] [CLICK] [URL: /] - User clicked on button element: "No label"
+[2026-08-24T15:02:15.533Z] [CLICK] [URL: /] - User clicked on a element: "מקורות" (href: /sources)
+[2026-08-24T15:02:24.173Z] [CLICK] [URL: /sources] - User clicked on a element: "No label" (href: /)
+[2026-08-24T15:02:28.584Z] [CLICK] [URL: /] - User clicked on button element: "No label"
+[2026-08-24T15:02:29.977Z] [CLICK] [URL: /] - User clicked on a element: "הגדרות" (href: /settings)
+[2026-08-24T15:03:15.918Z] [CLICK] [URL: /settings] - User clicked on button element: "שמור הגדרות"
+[2026-08-24T15:03:18.812Z] [CLICK] [URL: /settings] - User clicked on a element: "No label" (href: /)
+[2026-08-24T15:03:31.767Z] [CLICK] [URL: /] - User clicked on button element: "סטארט-אפים והשקעות"
+[2026-08-24T15:03:37.725Z] [CLICK] [URL: /] - User clicked on button element: "No label"
+[2026-08-24T15:03:38.839Z] [CLICK] [URL: /] - User clicked on a element: "הגדרות" (href: /settings)
+[2026-08-24T15:03:55.907Z] [CLICK] [URL: /settings] - User clicked on button element: "שמור הגדרות"
+[2026-08-24T15:03:58.769Z] [CLICK] [URL: /settings] - User clicked on a element: "No label" (href: /)
+[2026-08-24T15:04:22.358Z] [CLICK] [URL: /] - User clicked on button element: "כלכלה"
+[2026-08-24T15:04:25.428Z] [CLICK] [URL: /] - User clicked on button element: "No label"
+[2026-08-24T15:04:27.135Z] [CLICK] [URL: /] - User clicked on a element: "הגדרות" (href: /settings)
+[2026-08-24T15:04:37.767Z] [CLICK] [URL: /settings] - User clicked on button element: "שמור הגדרות"
+[2026-08-24T15:04:40.261Z] [CLICK] [URL: /settings] - User clicked on a element: "No label" (href: /)
