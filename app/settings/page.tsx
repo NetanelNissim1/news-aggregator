@@ -5,10 +5,11 @@ import { useState, useEffect } from "react";
 import { useSettings } from "../../components/SettingsProvider";
 
 const ALL_SOURCES = [
-  'Ynet', 'CNN', 'BBC News', 'TheMarker', 'Calcalist', 'Mako', 'Walla', 
-  'Reddit', 'TechCrunch', 'Wired', 'Geektime', 'People & Computers', 
-  'Ynet Tech', 'Calcalist Tech', 'The Verge', 'X',
-  'Channel 14', 'i24News', 'MSN', 'NYTimes', 'Google News', 'Business Insider', 'Forbes'
+  'Ynet', 'Channel 14', 'i24News', 'MSN', 'NYTimes', 'Google News', 'CNN', 
+  'BBC News', 'TheMarker', 'Calcalist', 'Mako', 'Walla', 'Reddit', 
+  'TechCrunch', 'Wired', 'Geektime', 'People & Computers', 'Ynet Tech', 
+  'Calcalist Tech', 'The Verge', 'X', 'Business Insider', 'Forbes', 
+  'Electrek', 'InsideEVs', 'IGN', 'Polygon', 'Kotaku', 'Vgames'
 ];
 
 const ALL_TABS = [

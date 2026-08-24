@@ -60,7 +60,8 @@ export default function Home() {
 
   const fetchTickerNews = async () => {
     try {
-      const response = await fetch(`/api/news?category=world`);
+      const disabledQuery = disabledSources.length > 0 ? `&disabled=${disabledSources.join(',')}` : '';
+      const response = await fetch(`/api/news?category=world${disabledQuery}`);
       if (response.ok) {
         const data = await response.json();
         const NEWS_SITES = ['Ynet', 'Channel 14', 'i24News', 'CNN', 'BBC News', 'TheMarker', 'Calcalist', 'Mako', 'Walla', 'Ynet Tech', 'NYTimes'];
