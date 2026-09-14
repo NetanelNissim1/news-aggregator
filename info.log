@@ -128,3 +128,20 @@
 [2026-08-24T15:36:35.964Z] [CLICK] [URL: /sources] - User clicked on a element: "No label" (href: /)
 [2026-08-24T15:36:54.905Z] [CLICK] [URL: /] - User clicked on button element: "No label"
 [2026-08-24T15:36:56.133Z] [CLICK] [URL: /] - User clicked on a element: "הגדרות" (href: /settings)
+[2026-08-24T16:01:27.362Z] [CLICK] [URL: /] - User clicked on button element: "No label"
+[2026-08-24T16:01:28.709Z] [CLICK] [URL: /] - User clicked on a element: "הגדרות" (href: /settings)
+[2026-08-24T16:01:39.426Z] [CLICK] [URL: /settings] - User clicked on button element: "שמור הגדרות"
+[2026-08-24T16:01:41.999Z] [CLICK] [URL: /settings] - User clicked on a element: "No label" (href: /)
+[2026-08-24T16:02:01.435Z] [CLICK] [URL: /] - User clicked on button element: "No label"
+[2026-08-24T16:02:02.653Z] [CLICK] [URL: /] - User clicked on a element: "הגדרות" (href: /settings)
+[2026-08-24T16:02:16.395Z] [CLICK] [URL: /settings] - User clicked on button element: "שמור הגדרות"
+[2026-08-24T16:02:19.730Z] [CLICK] [URL: /settings] - User clicked on a element: "No label" (href: /)
+[2026-08-24T16:02:36.857Z] [CLICK] [URL: /] - User clicked on button element: "הייטק"
+[2026-08-24T16:02:38.073Z] [CLICK] [URL: /] - User clicked on button element: "ראשי"
+[2026-08-24T16:02:39.379Z] [CLICK] [URL: /] - User clicked on button element: "סטארט-אפים והשקעות"
+[2026-08-24T16:02:40.151Z] [CLICK] [URL: /] - User clicked on button element: "כלכלה"
+[2026-08-24T16:02:40.786Z] [CLICK] [URL: /] - User clicked on button element: "עולם הרכב החשמלי"
+[2026-08-24T16:02:42.419Z] [CLICK] [URL: /] - User clicked on button element: "No label"
+[2026-08-24T16:02:44.333Z] [CLICK] [URL: /] - User clicked on a element: "מקורות" (href: /sources)
+[2026-08-24T16:02:47.098Z] [CLICK] [URL: /sources] - User clicked on a element: "No label" (href: /)
+[2026-09-14T18:14:15.897Z] [CLICK] [URL: /] - User clicked on button element: "ראשי"

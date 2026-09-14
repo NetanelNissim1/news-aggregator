@@ -9,7 +9,7 @@ export default function Home() {
   const [news, setNews] = useState<any[]>([]);
   const [tickerNews, setTickerNews] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
-  const [activeTab, setActiveTab] = useState('all');
+  const [activeTab, setActiveTab] = useState('world');
   const [searchQuery, setSearchQuery] = useState('');
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -35,7 +35,6 @@ export default function Home() {
   }
   
   const ALL_TABS = [
-    { id: 'all', name: 'ראשי' },
     { id: 'world', name: 'עולם' },
     { id: 'hightech', name: 'הייטק' },
     { id: 'startups', name: 'סטארט-אפים והשקעות' },
