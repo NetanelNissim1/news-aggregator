@@ -111,6 +111,18 @@ export async function GET(request) {
         { name: 'Kotaku', url: 'https://kotaku.com/rss', lang: 'en' },
         { name: 'Vgames', url: 'https://www.vgames.co.il/rss', lang: 'he' },
         { name: 'Reddit', url: 'https://www.reddit.com/r/gaming/.rss', lang: 'en' }
+      ],
+      sport: [
+        { name: 'ESPN', url: 'https://www.espn.com/espn/rss/news', lang: 'en' },
+        { name: 'Sky Sports', url: 'https://www.skysports.com/rss/12040', lang: 'en' },
+        { name: 'The Sporting News', url: 'https://news.google.com/rss/search?q=site:sportingnews.com&hl=en-US&gl=US&ceid=US:en', lang: 'en' },
+        { name: 'FOX Sports', url: 'https://news.google.com/rss/search?q=site:foxsports.com&hl=en-US&gl=US&ceid=US:en', lang: 'en' },
+        { name: 'SB Nation', url: 'https://www.sbnation.com/rss/index.xml', lang: 'en' },
+        { name: 'Sport5', url: 'https://news.google.com/rss/search?q=site:sport5.co.il&hl=he&gl=IL&ceid=IL:he', lang: 'he' },
+        { name: 'Walla! Sports', url: 'https://rss.walla.co.il/feed/3', lang: 'he' },
+        { name: '365Scores', url: 'https://news.google.com/rss/search?q=site:365scores.com&hl=he&gl=IL&ceid=IL:he', lang: 'he' },
+        { name: 'Sports Rabbi', url: 'https://sportsrabbi.com/feed/', lang: 'en' },
+        { name: 'ONE', url: 'https://news.google.com/rss/search?q=site:one.co.il&hl=he&gl=IL&ceid=IL:he', lang: 'he' }
       ]
     };
 

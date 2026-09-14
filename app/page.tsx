@@ -42,6 +42,7 @@ export default function Home() {
     { id: 'cyber', name: 'אבטחת מידע וסייבר' },
     { id: 'infosec', name: 'אבטחת מידע' },
     { id: 'economy', name: 'כלכלה' },
+    { id: 'sport', name: 'ספורט' },
     { id: 'ev', name: 'עולם הרכב החשמלי' },
     { id: 'autotech', name: 'טכנולוגיות רכב' },
     { id: 'gaming', name: 'גיימינג ותעשיית המשחקים' },

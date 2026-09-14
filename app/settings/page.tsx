@@ -10,7 +10,9 @@ const ALL_SOURCES = [
   'BBC News', 'TheMarker', 'Calcalist', 'Mako', 'Walla', 'Reddit', 
   'TechCrunch', 'Wired', 'Geektime', 'People & Computers', 'Ynet Tech', 
   'Calcalist Tech', 'The Verge', 'X', 'Business Insider', 'Forbes', 
-  'Electrek', 'InsideEVs', 'IGN', 'Polygon', 'Kotaku', 'Vgames'
+  'Electrek', 'InsideEVs', 'IGN', 'Polygon', 'Kotaku', 'Vgames',
+  'ESPN', 'Sky Sports', 'The Sporting News', 'FOX Sports', 'SB Nation',
+  'Sport5', 'Walla! Sports', '365Scores', 'Sports Rabbi', 'ONE'
 ];
 
 const ALL_TABS = [
@@ -21,6 +23,7 @@ const ALL_TABS = [
   { id: 'cyber', name: 'אבטחת מידע וסייבר' },
   { id: 'infosec', name: 'אבטחת מידע' },
   { id: 'economy', name: 'כלכלה' },
+  { id: 'sport', name: 'ספורט' },
   { id: 'ev', name: 'עולם הרכב החשמלי' },
   { id: 'autotech', name: 'טכנולוגיות רכב' },
   { id: 'gaming', name: 'גיימינג ותעשיית המשחקים' },
