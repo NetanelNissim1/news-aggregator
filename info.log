@@ -147,3 +147,48 @@
 [2026-09-14T18:14:15.897Z] [CLICK] [URL: /] - User clicked on button element: "ראשי"
 [2026-09-14T18:18:28.088Z] [CLICK] [URL: /] - User clicked on button element: "No label"
 [2026-09-14T18:18:29.439Z] [CLICK] [URL: /] - User clicked on a element: "הגדרות" (href: /settings)
+[2026-09-14T18:27:51.714Z] [CLICK] [URL: /settings] - User clicked on button element: "שמור הגדרות"
+[2026-09-14T18:27:55.503Z] [CLICK] [URL: /settings] - User clicked on a element: "No label" (href: /)
+[2026-09-14T18:27:58.465Z] [CLICK] [URL: /] - User clicked on button element: "ספורט"
+[2026-09-14T18:29:03.616Z] [CLICK] [URL: /] - User clicked on button element: "טכנולוגיות רכב"
+[2026-09-14T18:29:07.751Z] [CLICK] [URL: /] - User clicked on button element: "ספורט"
+[2026-09-14T18:29:09.493Z] [CLICK] [URL: /] - User clicked on button element: "כלכלה"
+[2026-09-14T18:29:13.830Z] [CLICK] [URL: /] - User clicked on button element: "סטארט-אפים והשקעות"
+[2026-09-14T18:29:15.797Z] [CLICK] [URL: /] - User clicked on button element: "הייטק"
+[2026-09-14T18:29:19.549Z] [CLICK] [URL: /] - User clicked on button element: "הייטק"
+[2026-09-14T18:29:20.225Z] [CLICK] [URL: /] - User clicked on button element: "סטארט-אפים והשקעות"
+[2026-09-14T18:29:21.335Z] [CLICK] [URL: /] - User clicked on button element: "כלכלה"
+[2026-09-14T18:29:21.949Z] [CLICK] [URL: /] - User clicked on button element: "ספורט"
+[2026-09-14T18:29:23.562Z] [CLICK] [URL: /] - User clicked on button element: "טכנולוגיות רכב"
+[2026-09-14T18:29:24.856Z] [CLICK] [URL: /] - User clicked on button element: "No label"
+[2026-09-14T18:29:26.040Z] [CLICK] [URL: /] - User clicked on a element: "הגדרות" (href: /settings)
+[2026-09-14T18:29:57.388Z] [CLICK] [URL: /settings] - User clicked on button element: "שמור הגדרות"
+[2026-09-14T18:30:00.035Z] [CLICK] [URL: /settings] - User clicked on a element: "No label" (href: /)
+[2026-09-14T18:30:02.526Z] [CLICK] [URL: /] - User clicked on button element: "סטארט-אפים והשקעות"
+[2026-09-14T18:30:05.084Z] [CLICK] [URL: /] - User clicked on button element: "כלכלה"
+[2026-09-14T18:30:08.721Z] [CLICK] [URL: /] - User clicked on button element: "ספורט"
+[2026-09-14T18:30:09.015Z] [CLICK] [URL: /] - User clicked on button element: "ספורט"
+[2026-09-14T18:30:11.533Z] [CLICK] [URL: /] - User clicked on button element: "טכנולוגיות רכב"
+[2026-09-14T18:30:16.192Z] [CLICK] [URL: /] - User clicked on button element: "No label"
+[2026-09-14T18:30:17.432Z] [CLICK] [URL: /] - User clicked on a element: "הגדרות" (href: /settings)
+[2026-09-14T18:30:27.000Z] [CLICK] [URL: /settings] - User clicked on button element: "שמור הגדרות"
+[2026-09-14T18:30:31.061Z] [CLICK] [URL: /settings] - User clicked on a element: "No label" (href: /)
+[2026-09-14T18:30:37.391Z] [CLICK] [URL: /] - User clicked on button element: "סטארט-אפים והשקעות"
+[2026-09-14T18:30:39.922Z] [CLICK] [URL: /] - User clicked on button element: "אבטחת מידע וסייבר"
+[2026-09-14T18:30:41.677Z] [CLICK] [URL: /] - User clicked on button element: "כלכלה"
+[2026-09-14T18:30:44.755Z] [CLICK] [URL: /] - User clicked on button element: "ספורט"
+[2026-09-14T18:30:47.400Z] [CLICK] [URL: /] - User clicked on button element: "כלכלה"
+[2026-09-14T18:30:49.230Z] [CLICK] [URL: /] - User clicked on button element: "אבטחת מידע וסייבר"
+[2026-09-14T18:30:50.826Z] [CLICK] [URL: /] - User clicked on button element: "סטארט-אפים והשקעות"
+[2026-09-14T18:30:52.817Z] [CLICK] [URL: /] - User clicked on button element: "אבטחת מידע וסייבר"
+[2026-09-14T18:30:53.600Z] [CLICK] [URL: /] - User clicked on button element: "הייטק"
+[2026-09-14T18:30:55.044Z] [CLICK] [URL: /] - User clicked on button element: "No label"
+[2026-09-14T18:30:56.188Z] [CLICK] [URL: /] - User clicked on a element: "הגדרות" (href: /settings)
+[2026-09-14T18:31:23.449Z] [CLICK] [URL: /settings] - User clicked on button element: "שמור הגדרות"
+[2026-09-14T18:31:26.508Z] [CLICK] [URL: /settings] - User clicked on a element: "No label" (href: /)
+[2026-09-14T18:31:29.350Z] [CLICK] [URL: /] - User clicked on button element: "הייטק"
+[2026-09-14T18:31:31.230Z] [CLICK] [URL: /] - User clicked on button element: "עולם"
+[2026-09-14T18:31:32.519Z] [CLICK] [URL: /] - User clicked on button element: "כלכלה"
+[2026-09-14T18:31:33.992Z] [CLICK] [URL: /] - User clicked on button element: "ספורט"
+[2026-09-14T18:31:38.832Z] [CLICK] [URL: /] - User clicked on button element: "סגנון חיים"
+[2026-09-14T18:31:46.530Z] [CLICK] [URL: /] - User clicked on button element: "ספורט"
